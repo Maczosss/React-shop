@@ -1,4 +1,4 @@
-import { FETCH_PRODUCTS, FILTER_PRODUCTS_BY_SIZE, ORDER_PRODUCTS_BY_PRIZE } from "../types";
+import { FETCH_PRODUCTS, FILTER_PRODUCTS_BY_SIZE, ORDER_PRODUCTS_BY_PRICE } from "../types";
 
 export const fetchProducts = () => async (dispatch) => {
   const res = await fetch("/api/products");
@@ -36,7 +36,7 @@ export const sortProducts = (filteredProducts, sort) => (dispatch) => {
     ))
   }
 dispatch(
-  { type: ORDER_PRODUCTS_BY_PRIZE,
+  { type: ORDER_PRODUCTS_BY_PRICE,
     payload: {
       sort: sort,
       items: sortedProducts,

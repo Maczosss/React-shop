@@ -1,3 +1,3 @@
 # React shopping cart
 
-# Step 1 create react app
+# |Simple react shop, made for an assignment in school
